@@ -1,0 +1,50 @@
+1- Variaveis
+
+EM bash não é necessario especificar o tipo de dado que sera armazenado em um variavel, sendo a sua declaração bastante simples.
+
+	-NOME= "Fulano"
+	-IDADE= "45"
+
+
+2- SubShell
+
+Uma subshell permite executar comandos "fora" do script e armazenar o retorno (resposta do comando) em forma de texto numa variavel, por exemplo.
+
+	-DIA=$(date +%d)
+
+3- Corte HOrizontal 
+
+Quando há uma saida complexa (muitas linhas) pode existir a necessidade de se "recortar" apenas uma linha especificada. Recomenda-se quando possivel, que se user o grep, filtrando por um padrão, Exemplo...
+
+	-Comando_complexo | grep ^A
+
+**** ^A= tudo que começa com a letra "A"
+
+4- Corte vertical (colunas)
+
+Recomenda-se o uso do "AWK" para se recortar uma coluna x. Exemplo...
+
+
+	-Comando_complexo | awk '{print $3}'
+
+5- Laço de repetição com while
+
+Usando-se o "WHILE" é possivel receber várias linhas do comando anterior ao pipe e exeutar um laço de repetição n vezes, onde n== ao numero de linhas do comando anterior:
+
+	-Comando_complexo | while read i
+	do
+		echo $i
+	done
+
+
+
+
+
+
+
+
+
+
+
+
+
