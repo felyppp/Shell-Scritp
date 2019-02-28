@@ -1,0 +1,38 @@
+#echo -e" "Viva o \033[01;32mLinux\033[01;37m!""
+
+####033": ainda não consegui encontrar o real motivo de usar isto, mas é obrigatório para usar as cores, se trocar por outra coisa dará tudo errado
+
+####01" significa que nosso texto será em negrito
+
+####32m" 32 representa a cor vermelha e o "m" indica o fim da expressão e após ele você já poderá incluir o texto que bem desejar
+
+#00: Nenhum
+#01: Negrito
+#04: Sublinhado
+#05: Piscante
+#07: Reverso
+#08: Oculto
+
+	
+#Cores de texto
+
+#30: Preto
+#31: Vermelho
+#32: Verde
+#33: Amarelo
+#34: Azul
+#35: Magenta (Rosa)
+#36: Ciano (Azul Ciano)
+#37: Branco
+
+	
+#Cores de fundo
+
+#40: Preto
+#41: Vermelho
+#42: Verde
+#43: Amarelo
+#44: Azul
+#45: Magenta (Rosa)
+#46: Ciano (Azul Ciano)
+#47: Branco 
