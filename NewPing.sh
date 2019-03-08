@@ -1,5 +1,7 @@
 #!/bin/bash
 
+source .ping.txt # O comando source importa um script para outro
+
 clear
 PING=$(ping -c 2 $1 > .ping.txt)
 
